@@ -26,6 +26,9 @@
 	
 	<script>
 		window.botpressWebChat.init({ host: 'https://dfilittobot.herokuapp.com/', botId: 'zenusbot', hideWidget: false })
+		document.getElementById('show-bp').addEventListener('click', () => {
+    window.botpressWebChat.sendEvent({ type: 'show' })
+  })
 	</script>
         <main class="container">
             <article>
