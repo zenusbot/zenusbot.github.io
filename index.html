@@ -23,52 +23,47 @@
 		<script src="https://dfilittobot.herokuapp.com/assets/modules/channel-web/inject.js"></script>
     </head>
     <body>
-	
 	<script>
 		window.botpressWebChat.init({ host: 'https://dfilittobot.herokuapp.com/', botId: 'zenusbot', hideWidget: false })
 		document.getElementById('app').addEventListener('click', () => {
     window.botpressWebChat.sendEvent({ type: 'show' })
   })
-	</script>
+    </script>
+    <header>
+        <ul class="social">
+            <li>  
+                <a href="index.html">
+                    <i class="fas fa-home" title="Home"></i>
+                </a>
+            </li>
+
+            <li>  
+                <a href="integrantes.html">
+                    <i class="fas fa-users" title="Integrantes"></i> 
+                </a>
+            </li>
+
+            <li>  
+                <a href="links.html">
+                    <i class="fab fa-buffer" title="Links"></i>
+                </a>
+            </li>
+
+        </ul>
+    </header>
         <main class="container">
             <article>
                 <section class="foto-social">
                     <div class="foto">
-                        <img src="img/zenus-bot.png" alt="zenus" title="colocar meu nome">
-                    </div>
-                    <ul class="social">
-                        <li>  
-                            <a href="https://www.linkedin.com/in/danilo-filitto-06436510b/" target="_blank">
-                                <span class="fab fa-linkedin-in"></span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.youtube.com/danilofilittoppr" target="_blank">
-                                    <span class="fab fa-youtube"></span>
-                            </a>
-                        </li>
-
-                        <li>  
-                            <a href="https://www.facebook.com/dfilitto/" target="_blank">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-                        </li>
-
-                        <li>  
-                            <a href="https://twitter.com/dfilitto" target="_blank">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-                        </li>
-                    </ul>
+                        <img src="img/logo.png" alt="zenus" title="colocar meu nome">
                 </section>
                 <section class="texto">
-                    <h1>ZenusBot</h1>
+                    <h1></h1>
                     <p>Eu sou o ZenusBot, fui criado pelos alunos da turma 44 do curso técnico em informática do Senac de Presidente Prudente.</p>
                     <p>Meu objetivo é auxiliar todos que tenham dúvidas sobre hardware ou software</p>
 					<p>Espero ajudar vocês com dicas e curiosidades sobre Hardware e Software.</p>
 					<p>Basta clicar no balãozinho do chat.</p>
-					<p>Clique no link para conhecer um pouco mais sobre o <a href="https://www.sp.senac.br/web/senac-presidente-prudente">Senac Presidente Prudente</a>.</p>
+					<p>Clique no link para conhecer um pouco mais sobre o <a class="a1" href="https://www.sp.senac.br/web/senac-presidente-prudente">Senac Presidente Prudente</a>.</p>
                 </section>
             </article>
         </main>
