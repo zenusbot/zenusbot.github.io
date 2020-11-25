@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Links Uteis</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.svg">
+
+    <link 
+            rel="stylesheet" 
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+            crossorigin="anonymous">
+</head>
+<style>
+    @keyframes animate{
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0.7;
+    }
+    
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+body{
+    background-image: url(img/fundo1.png);
+    background-repeat: repeat;    
+}
+header{
+    z-index: 2000;
+}
+a{
+    text-decoration: none; 
+    color: rgb(2, 2, 2);
+}
+.container{
+    width: 1000px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 5px;
+
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+article #links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#texto02{
+    display: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 2px 0 15px 0;
+}
+.links{
+    border-top:1px dashed #f1f5f9;
+    
+    text-align: center;
+    padding: 24px 4px;
+    margin: 30px 8px;
+    box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, .1);
+    transition:all 0.3s ease;
+
+}
+.links:hover{
+    background-color: #00000090;
+    border: 2px #ffffff solid;
+    border-radius: 10px;
+    opacity:1;
+}
+.btvoltar{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #000000, #000000);
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #ffffff;
+}
+.btvoltar:hover {
+    background: rgb(0, 0, 0, 0);
+    color: white;
+    box-shadow: inset 0 0 0 3px transparent;
+}
+
+.btvoltar:nth-child(2){
+    background: linear-gradient(90deg, #000000, #000000);
+}
+.container3 h1{
+    margin: 40px 2px;
+    color: white;
+    width: 80%;
+    padding: 5px;
+    border-bottom:1px dashed #f1f5f9;
+}
+h2{
+    text-transform: uppercase;
+}
+p{
+    font-size: 20px;
+}
+span{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear;
+}
+main{
+    border: 1px solid #000;
+    margin: 0px auto;
+    width: 90%!important
+}
+#links #texto02{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    box-shadow: 1px 1px 6px 1px #7a7a7a;
+}
+ul.social {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.social li {
+    flex: 1 1 35px;
+}
+
+ul.social li a {
+    text-align: center;
+    max-width: 100%;
+    display: block;
+    padding: 5px;
+}
+
+
+ul.social li a:hover {opacity: .5;}
+</style>
+<body>
+    <header> 
+        <ul class="social">
+
+            <li>  
+                <a href="index.html">
+                    <i class="fas fa-home" title="Home"></i>
+                </a>
+            </li>
+
+            <li>  
+                <a href="integrantes.html">
+                    <i class="fas fa-users" title="Integrantes"></i> 
+                </a>
+            </li>
+
+            <li>  
+                <a href="links.html">
+                    <i class="fab fa-buffer" title="Links"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main class="container3">
+        <h1>Link's Uteis</h1>
+        <article id="links">
+            <section id="texto02">
+                <div class="links">
+                    <h2>O que é hardware?</h2>
+                    <br>
+                    <p>Hardware é todo e qualquer componente ou equipamento físico, tanto dentro quanto fora da Tecnologia da Informação.</p>
+                    <br>
+                    <p>Para saber mais clique no botao abaixo</p>
+                    <a class="btvoltar" href="https://tecnoblog.net/311761/o-que-e-hardware/" target="_blank" onclick="botaoEfeito()">Clique aqui</a>
+                </div>
+
+                <div class="links">
+                    <h2>phpIPAM</h2>
+                    <br>
+                    <p>O phpIPAM é uma aplicação de gerenciamento de endereço IPs de código aberto (IPAM). 
+                        Seu objetivo é fornecer gerenciamento de endereços IP leve, moderno e útil.</p>
+                    <br>
+                    <p>Para saber mais clique no botao abaixo</p>
+                    <a class="btvoltar" href="pdf.html" target="_blank" onclick="botaoEfeito()">Clique aqui</a>
+                </div>
+                
+                <div class="links">
+                    <h2>Oracle Virtual Box</h2>
+                    <br>
+                    <p>O oracle permite que você crie maquinas virtuais no seu computador com qualquer sistema operacional.</p>
+                    <br>
+                    <p>Para saber mais clique no botao abaixo</p>
+                    <a class="btvoltar" href="https://www.oracle.com/br/virtualization/virtualbox/" target="_blank" onclick="botaoEfeito()">Clique Aqui</a>
+                </div>
+
+                <div class="links">
+                    <h2>Cisco Packet Tracer</h2>
+                    <br>
+                    <p>Obtenha experiência no mundo real com esta ferramenta eficaz de simulação de rede criada pela Cisco. 
+                        Pratique a criação de redes simples e complexas em vários dispositivos e vá além dos roteadores e switches. 
+                        Crie soluções interconectadas para cidades, casas e empresas inteligentes.</p>
+                    <br>
+                    <p>Para saber mais clique no botao abaixo</p>
+                    <a class="btvoltar" href="https://www.netacad.com/pt-br/courses/packet-tracer" target="_blank" onclick="botaoEfeito()">Clique Aqui</a>
+                </div>  
+
+                <div class="links">
+                    <h2>Microsoft Azure</h2>
+                    <br>
+                    <p>O Microsoft Azure é uma plataforma destinada à execução de aplicativos e serviços, 
+                        baseada nos conceitos da computação em nuvem.</p>
+                    <br>
+                    <p>Para saber mais clique no botao abaixo</p>
+                    <a class="btvoltar" href="https://azure.microsoft.com/pt-br/" target="_blank" onclick="botaoEfeito()">Clique Aqui</a>
+                </div>
+
+                <div class="links">
+                    <h2>Botpress</h2>
+                    <br>
+                    <p>Site que permite vc criar o seu proprio chatbot</p>
+                    <br>
+                    <p>Para saber mais clique no botao abaixo</p>
+                    <a class="btvoltar" href="https://botpress.com/" target="_blank" onclick="botaoEfeito()">Clique Aqui</a>
+                </div>
+
+                <div class="links">
+                    <h2>Heroku</h2>
+                    <br>
+                    <p>Heroku é uma plataforma em nuvem como um serviço que suporta várias linguagens de programação. Uma das primeiras plataformas em nuvem</p>
+                    <br>
+                    <p>Para saber mais clique no botao abaixo</p>
+                    <a class="btvoltar" href="https://www.heroku.com/" target="_blank" onclick="botaoEfeito()">Clique Aqui</a>
+                </div>
+                
+                <div class="links">
+                    <h2>Amazon Web Services (AWS)</h2>
+                    <br>
+                    <p>Amazon Web Services, também conhecido como AWS, é uma plataforma de serviços de computação em nuvem, que formam uma plataforma de computação na nuvem oferecida pela Amazon.com. Os serviços são oferecidos em várias geográficas distribuídas pelo mundo.</p>
+                    <br>
+                    <p>Para saber mais clique no botao abaixo</p>
+                    <a class="btvoltar" href="https://aws.amazon.com/pt/" target="_blank" onclick="botaoEfeito()">Clique Aqui</a>
+                </div>
+                
+                <div class="links">
+                    <h2>HW Monitor</h2>
+                    <br>
+                    <p>O HWMonitor é uma utilidade para você monitorar o PC antes que ele não ferva e abra o bico. Com o HWMonitor você controla voltagem, temperaturas, velocidade do cooler e garante a boa saúde do computador.</p>
+                    <br>
+                    <p>Para saber mais clique no botao abaixo</p>
+                    <a class="btvoltar" href="https://hwmonitor.br.uptodown.com/windows" target="_blank" onclick="botaoEfeito()">Clique Aqui</a>
+                </div>
+
+                <div class="links">
+                    <h2>Cooler Master</h2>
+                    <br>
+                    <p>Um programa para calcular a potência necessária para a fonte do alimentação do seu PC</p>
+                    <br>
+                    <p>Para saber mais clique no botao abaixo</p>
+                    <a class="btvoltar" href="https://www.coolermaster.com/br/pt-br/power-supply-calculator/" target="_blank" onclick="botaoEfeito()">Clique Aqui</a>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
